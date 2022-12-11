@@ -20,13 +20,11 @@ const gameCalc = () => {
       case '-':
         rightAnswer = number1 - number2;
         break;
-      case '*':
+      default:
         rightAnswer = number1 * number2;
         break;
-      default:
-        rightAnswer = null;
-        break;
     }
+    console.log(operator);
     rightAnswer = String(rightAnswer);
     return ([questExpression, rightAnswer]);
   };
