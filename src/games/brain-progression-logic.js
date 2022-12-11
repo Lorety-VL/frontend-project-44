@@ -9,7 +9,7 @@ const gameProgression = () => {
     const missingNumberPosition = giveRandomNumber(7);
     const firstNumber = giveRandomNumber(20);
     const incrementor = giveRandomNumber(19) + 1;
-    const questProgression = [firstNumber];
+    let questProgression = [firstNumber];
 
     for (let i = 1; i < arrayLength; i += 1) {
       questProgression.push(firstNumber + incrementor * i);
@@ -17,6 +17,7 @@ const gameProgression = () => {
     let rightAnswer = questProgression[missingNumberPosition];
     questProgression[missingNumberPosition] = '..';
 
+    questProgression = questProgression.join(' ');
     rightAnswer = String(rightAnswer);
     return ([questProgression, rightAnswer]);
   };
