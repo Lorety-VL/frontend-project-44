@@ -5,7 +5,6 @@ const gameProgression = () => {
   const gameIntro = 'What number is missing in the progression?';
 
   const gameProgressionLogic = () => {
-
     const arrayLength = 8;
     const missingNumberPosition = giveRandomNumber(7);
     const firstNumber = giveRandomNumber(20);
@@ -13,11 +12,11 @@ const gameProgression = () => {
     const questProgression = [firstNumber];
 
     for (let i = 1; i < arrayLength; i += 1) {
-        questProgression.push(firstNumber + incrementor * i);
+      questProgression.push(firstNumber + incrementor * i);
     }
     let rightAnswer = questProgression[missingNumberPosition];
     questProgression[missingNumberPosition] = '..';
-    
+
     rightAnswer = String(rightAnswer);
     return ([questProgression, rightAnswer]);
   };
