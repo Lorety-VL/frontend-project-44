@@ -13,17 +13,18 @@ const gameGcd = () => {
     const getGcd = (numberLocal1, numberLocal2) => {
       let num1 = numberLocal1;
       let num2 = numberLocal2;
-      while (num1 && num2) {
+      while (num1 !== 0 && num2 !== 0) {
         if (num1 > num2) {
           num1 %= num2;
         } else {
           num2 %= num1;
         }
       }
-      return (num1 + num2);
+      const gcd = num1 + num2;
+      return (gcd);
     };
-
-    const rightAnswer = String(getGcd(number1, number2));
+    let rightAnswer = getGcd(number1, number2);
+    rightAnswer = String(rightAnswer);
     return ([questNums, rightAnswer]);
   };
   commonLogic(gameIntro, gameGcdLogic);

@@ -8,7 +8,8 @@ const gamePrime = () => {
     const questNumber = giveRandomNumber(98) + 2;
     const isPrime = (questNumberLocal) => {
       let countOfDel = 0;
-      for (let i = 1; i <= Math.round(questNumberLocal / 2); i += 1) {
+      const optimalBorder = Math.round(questNumberLocal / 2);
+      for (let i = 1; i <= optimalBorder; i += 1) {
         if (questNumberLocal % i === 0) {
           countOfDel += 1;
         }
