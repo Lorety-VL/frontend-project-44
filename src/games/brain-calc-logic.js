@@ -4,12 +4,12 @@ import giveRandomNumber from '../giveRandomNumber.js';
 const gameCalc = () => {
   const gameIntro = 'What is the result of the expression?';
 
-  const gameEvenLogic = () => {
+  const gameCalcLogic = () => {
     const number1 = giveRandomNumber(100);
     const number2 = giveRandomNumber(100);
 
     const operators = ['+', '-', '*'];
-    const operator = operators[giveRandomNumber(2)];
+    const operator = operators[giveRandomNumber(3)];
     const questExpression = `${number1} ${operator} ${number2}`;
     let rightAnswer;
 
@@ -28,7 +28,7 @@ const gameCalc = () => {
     rightAnswer = String(rightAnswer);
     return ([questExpression, rightAnswer]);
   };
-  commonLogic(gameIntro, gameEvenLogic);
+  commonLogic(gameIntro, gameCalcLogic);
 };
 
 export default gameCalc;

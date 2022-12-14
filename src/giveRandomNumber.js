@@ -1,2 +1,2 @@
-const giveRandomNumber = (maxNum) => Math.round(Math.random() * maxNum);
+const giveRandomNumber = (maxNum) => Math.floor(Math.random() * maxNum);
 export default giveRandomNumber;
