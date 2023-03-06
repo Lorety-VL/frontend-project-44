@@ -23,5 +23,4 @@ const gamePrimeLogic = () => {
   return ([questNumber, rightAnswer]);
 };
 
-
 export default () => commonLogic(gameIntro, gamePrimeLogic);

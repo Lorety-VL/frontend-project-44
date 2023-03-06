@@ -20,7 +20,7 @@ const gameCalcLogic = () => {
   const operator = operators[getRandomInRange(0, 2)];
   const questExpression = `${number1} ${operator} ${number2}`;
 
-  let rightAnswer = calculation(number1, number2, operator)
+  let rightAnswer = calculation(number1, number2, operator);
   rightAnswer = String(rightAnswer);
   return ([questExpression, rightAnswer]);
 };
