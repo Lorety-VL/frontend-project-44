@@ -7,17 +7,13 @@
 <p><i>Brain Games</i> is a set of five console mini-games, each game consists of 3 questions, to win you need to give the correct answer to each of them. an incorrect answer ends the game. good luck!)</p>
 
 <h2><b>Install</b></h2>
-```
-git clone https://github.com/Lorety-VL/frontend-project-44.git
+```git clone https://github.com/Lorety-VL/frontend-project-44.git
 make install
-sudo npm link
-```
+sudo npm link```
 
 <h2><b>Play</b></h2>
 <p>choose any game and enter in CLI, for example:</p>
-```
-brain-calc
-```
+`brain-calc`
 
 <h2><b>Game list</b></h2>
 <ol>
